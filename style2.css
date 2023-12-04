@@ -1,0 +1,165 @@
+body {
+  background-color: white;
+}
+.screen-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  padding: 4rem;
+  padding-top: 8rem;
+  position: relative;
+  overflow: hidden;
+}
+.productImage {
+  width: 300px;
+}
+.product-images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+.jeansInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.jeansHeader {
+  display: flex;
+  gap: 6rem;
+  padding-bottom: 20px;
+}
+.jeansName {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.jeansPrice {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sizesContainer {
+  padding-block: 2rem;
+  padding-top: 10px;
+  padding-left: 30px;
+  align-self: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 12px; /* Adjust the gap as needed */
+  width: 60%;
+}
+
+.size {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none; /* Prevents text selection */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+.size.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Optional: Add hover effect for non-selected sizes */
+.size:not(.selected):hover {
+  background-color: #f2f2f2;
+}
+.text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 170px;
+  align-self: flex-start;
+}
+
+.outline-button {
+  align-self: center;
+  border-radius: 4px;
+  border: 1.5px solid #0b090a;
+  background-color: transparent;
+  color: #0b090a;
+  margin-top: 32px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+  border: 1.5px solid #0b090a;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.7rem 3rem;
+}
+
+.outline-button:hover {
+  background-color: #0b090a;
+  color: #e0e0e0;
+}
+
+.outline-button:active {
+  transform: scale(0.98);
+}
+
+/* Checkout Container Style */
+.checkout-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Rubik", sans-serif;
+  color: #333;
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.checkout-header h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-body {
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.checkout-body-item {
+  margin-bottom: 2rem;
+}
+
+.checkout-body-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-body-item-content {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.checkout-body-item-content-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  margin-bottom: 1rem;
+}
+
+.checkout-body-item-content-item:last-child {
+  margin-bottom: 0;
+}
+
+input[type="radio"] {
+  margin-right: 1rem;
+}
